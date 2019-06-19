@@ -1,0 +1,18 @@
+name: Cloudflare Cache Clear
+image: lugana707/cloudflare-cache-clear:latest
+variables:
+ - name: CLOUDFLARE_ZONE
+   default: '${CLOUDFLARE_ZONE}'
+ - name: CLOUDFLARE_AUTH_EMAIL
+   default: '${SECRET_KEY}'
+ - name: CLOUDFLARE_AUTH_KEY
+   default: '${CLOUDFLARE_AUTH_KEY}'
+ - name: URL_CACHE_PATH
+   default: '${URL_CACHE_PATH}'
+description: Showing how easy is to make pipes for Bitbucket Pipelines.
+repository: demo-pipe-bash
+maintainer: bitbucketci-team@atlassian.com
+icon: 
+tags:
+  - helloworld
+  - example
