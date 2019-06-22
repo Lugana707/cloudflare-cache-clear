@@ -9,10 +9,10 @@ variables:
    default: '${CLOUDFLARE_AUTH_KEY}'
  - name: URL_CACHE_PATH
    default: '${URL_CACHE_PATH}'
-description: Showing how easy is to make pipes for Bitbucket Pipelines.
-repository: demo-pipe-bash
-maintainer: bitbucketci-team@atlassian.com
+description: Clear Cloudflare edge cache
+repository: cloudflare-cache-clear
+maintainer: lugana707@github
 icon: 
 tags:
-  - helloworld
-  - example
+  - cloudflare
+  - cache
