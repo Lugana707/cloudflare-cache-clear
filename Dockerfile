@@ -1,7 +1,8 @@
 FROM alpine:3.8
-MAINTAINER lugana707
+LABEL maintainer="lugana707@github"
 
 RUN apk update && apk add bash curl
-ADD pipe.sh /
+WORKDIR /src
+ADD pipe.sh ./
 
-ENTRYPOINT [ "/pipe.sh" ]
+ENTRYPOINT [ "./pipe.sh" ]
