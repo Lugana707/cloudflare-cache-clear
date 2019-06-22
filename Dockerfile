@@ -5,4 +5,4 @@ RUN apk update && apk add bash curl
 WORKDIR /src
 ADD pipe.sh ./
 
-ENTRYPOINT [ "./pipe.sh" ]
+ENTRYPOINT [ "/src/pipe.sh" ]
