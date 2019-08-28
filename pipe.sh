@@ -7,4 +7,4 @@ curl \
     -H "X-Auth-Email:$CLOUDFLARE_AUTH_EMAIL" \
     -H "X-Auth-Key:$CLOUDFLARE_AUTH_KEY" \
     -H "Content-Type:application/json" \
-    --data '{"files":["$URL_CACHE_PATH"]}'
+    --data '{"files":["${URL_CACHE_PATH}"]}'
