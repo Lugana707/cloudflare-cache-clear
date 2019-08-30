@@ -2,7 +2,7 @@
 
 set -e
 
-for file in "${URL_CACHE_PATHS[@}}"; do
+for file in "${URL_CACHE_PATHS[@]}"; do
     curl \
         -X POST "https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE/purge_cache" \
         -H "X-Auth-Email:$CLOUDFLARE_AUTH_EMAIL" \
