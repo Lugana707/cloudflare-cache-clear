@@ -7,8 +7,8 @@ variables:
    default: '${SECRET_KEY}'
  - name: CLOUDFLARE_AUTH_KEY
    default: '${CLOUDFLARE_AUTH_KEY}'
- - name: URL_CACHE_PATH
-   default: '${URL_CACHE_PATH}'
+ - name: URL_CACHE_PATHS
+   default: '${URL_CACHE_PATHS}'
 description: Clear Cloudflare edge cache
 repository: cloudflare-cache-clear
 maintainer: lugana707@github
